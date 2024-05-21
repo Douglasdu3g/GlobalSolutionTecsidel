@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monitoramento de Câmeras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .camera-window {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tecsidel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/Tecsidel/Idex.day.html#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Configurações</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dispositivos de Monitoramento
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Veículos</a></li>
+                            <li><a class="dropdown-item" href="#">Câmeras</a></li>
+                            <li><a class="dropdown-item" href="#">Antenas</a></li>
+                            <li><a class="dropdown-item" href="#">Tags</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Localização do Pedágio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sugestões</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Layout de Conteúdo -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Coluna Esquerda Botões das câmeras--> 
+            <div class="col-md-4 left-column">
+                <h2>Câmeras</h2>
+                <button class="btn btn-dark camera-btn m-2">Câmera 1</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 2</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 3</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 4</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 5</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 6</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 7</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 8</button>
+                <button class="btn btn-dark camera-btn m-2">Câmera 9</button>
+            </div>
+            <!-- Coluna Direita Dados Específicos de cada Câmera Detalhes do Equipamento-->
+            <div class="col-md-8 right-column">
+                <div class="camera-window">
+                    <div class="table-container">
+                        <h2 class="text-center">Detalhes do Equipamento</h2>
+                        <table class="table table-dark table-striped">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">ID do Equipamento (chave primária)</th>
+                                    <td>12345</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nome do Equipamento</th>
+                                    <td>Câmera de Segurança</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tipo de Equipamento</th>
+                                    <td>Câmera</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Número de Série</th>
+                                    <td>SN123456789</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fabricante</th>
+                                    <td>TechCorp</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modelo</th>
+                                    <td>TC-2024</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Status do Equipamento</th>
+                                    <td>Operacional</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Data e Hora da Última Verificação</th>
+                                    <td>2024-05-16 14:30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Descrição</th>
+                                    <td>Equipamento instalado na entrada principal.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Atributos especificos de cada câmera -->
+                    <h2>Visualização das Câmeras</h2>
+                    <div class="camera-window">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID do Monitoramento</th>
+                                    <th scope="col">ID da Praça</th>
+                                    <th scope="col">Data e Hora do Monitoramento</th>
+                                    <th scope="col">Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">FVX001</th>
+                                    <td>FVX</td>
+                                    <td>01/04/2024</td>
+                                    <td>Visibilidade em 95%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">FVX002</th>
+                                    <td>FVX</td>
+                                    <td>01/04/2024</td>
+                                    <td>Visibilidade 25%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">FVX003</th>
+                                    <td>FVX</td>
+                                    <td>01/04/2024</td>
+                                    <td>Precisa de manutenção</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Localização das Câmeras pelo Google Maps que poderá ajudar a equipe de manutenção a localizar os equipamentos -->
+                </div>
+            </div>
+        </div>
+        <div class="camera-window d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234158.97472845804!2d-47.14394971328128!3d-23.506089399999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5db1f80e5ba7%3A0x357224f2de658cb9!2sCCR%20ViaOeste!5e0!3m2!1spt-BR!2sbr!4v1716054128825!5m2!1spt-BR!2sbr" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Imagens das câmeras em Tempo Real -->
+        <div class="camera-window d-flex justify-content-center border-black">
+            <iframe width="80%" height="315" src="https://www.youtube.com/embed/6dp-bvQ7RWo?si=480RcZ1zOgCyE0VR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
