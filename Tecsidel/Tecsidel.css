@@ -1,17 +1,36 @@
-body {
-    
-
-    /* background-image: url('Tecsidel\ Imagens/road-2683741.jpg');  */
-    background-image: url('Tecsidel\ Imagens/road-2683741.jpg');
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Catamaran', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
     background-size: cover;
 }
-
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 .dark-mode {
     background-image: url('Tecsidel\ Imagens/milky-way-2948284.jpg'); /* Substitua 'caminho_para_sua_imagem.jpg' pelo caminho real do seu arquivo de imagem */
     background-size: cover;  /* Cobrir toda a área disponível */
@@ -30,7 +49,7 @@ body {
     
 }
 header {
-    background-color: #2f2b2bbd;
+
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -154,4 +173,55 @@ footer {
     .solution-item {
         width: 90%;
     }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Container para o vídeo */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Estilo do vídeo para cobrir toda a tela */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+/* Conteúdo sobre o vídeo */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para o navbar */
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo para o botão */
+.btn-white {
+    background-color: white;
+    border: none;
 }

@@ -17,7 +17,7 @@
     </header>
 
 
-    <div class= "col-4 container-fluid container-sm text-center Cadastro conteiner. ">
+    <div class= "col-4 container-fluid container-sm text-center bg-dark opacity-75 text-light Cadastro conteiner. ">
     
         <div class="container">
         
@@ -40,6 +40,26 @@
             <label for="senha" class="form-label text-light">Senha</label>
             <input type="password" id="senha" name="senha" class="form-control" required minlength="5" maxlength="15" placeholder="Ex: 123456">
     </div>
+    <h1>Qual setor trabalha? </h1>
+<form name="dados" id="dados" action="" method="post">
+   <fieldset>
+      <h3>Área de atuação </h3>
+      <label for="tech">Selecione ou digite sua
+      tecnologia:</label>
+      <input list="myTech" id="tech" name="tech">
+      <datalist id="myTech">
+         <option value="Blockchain">
+         <option value="Cyber Security">
+         <option value="Cloud">
+         <option value="Hiperautomação">
+         <option value="IA">
+         <option value="IOT">
+         <option value="Monitoramento">
+         <option value="Engenharia da Computação">
+         <option value="Administração">
+      </datalist>
+   </fieldset>
+</form>
     <div class="box-item">
         <button class="form-btn text-light">Criar conta</button>
     </div>
