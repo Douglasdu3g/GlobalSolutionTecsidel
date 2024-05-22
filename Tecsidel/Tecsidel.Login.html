@@ -16,13 +16,12 @@
             font-family: 'Open Sans', sans-serif;
         }
         .container {
-            width: 90%;
-            max-width: 540px;
-            height: auto;
-            margin: 10px auto;
-            padding: 20px 10px;
-            border: 1px solid;
-            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7); /* Adicionando transparência */
+            color: white;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
         h1, h2 {
             margin: 0 .5rem;
@@ -53,6 +52,10 @@
             padding-left: 40px; /* espaço para o ícone */
             font-size: 1.1rem;
         }
+
+        .form-label, .form-control {
+            color: #FFFFFF; 
+        }
         .form-btn {
             width: 100%;
             margin: 0.8rem 0;
@@ -69,6 +72,7 @@
             background-image: url('Tecsidel\ Imagens/road-2683741.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -105,6 +109,28 @@
             font-size: 1.5rem;
             color: gray;
         }
+        html, body {
+            height: 100%; /* Faz o body ter pelo menos a altura da janela */
+            margin: 0;
+            padding: 0;
+            position: relative; /* Necessário para position: absolute no footer */
+        }
+
+        footer {
+            background: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute; /* Mudança aqui */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            filter: opacity(70%);
+        }
+
+        main { 
+            flex: 1; 
+        }
+
     </style>
 </head>
 <body class="bg-light text-dark">
