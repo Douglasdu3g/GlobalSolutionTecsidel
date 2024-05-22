@@ -9,11 +9,6 @@ A Tecsidel, reconhecida por suas inovações em sistemas de arrecadação, imple
 ## Objetivos do Projeto
 O objetivo deste projeto é criar um sistema de monitoramento que permita a visualização em tempo real do status dos equipamentos do pórtico FREE FLOW, incluindo câmeras e antenas para leitura de tags e placas de veículos.
 
-## Tecnologias Utilizadas
-- Front-end: [Tecnologias específicas usadas, como Angular, React, etc.]
-- Modelagem de Dados (MER)
-- Diagrama de Classes
-
 ## Desafios e Entregas
 ### Desafios
 - Compreender o modelo de negócio sem a necessidade de entrega de artefatos adicionais.
@@ -24,17 +19,11 @@ O objetivo deste projeto é criar um sistema de monitoramento que permita a visu
 1. Projeto do Front-end.
 2. Apresentação com a modelagem de dados, diagrama de classe, e explicação dos três insights identificados que a nova plataforma de monitoramento poderá oferecer ao negócio.
 
-## Insights
-1. **Eficiência Operacional**: A capacidade de monitorar os equipamentos em tempo real permite identificar e resolver rapidamente quaisquer falhas ou ineficiências, reduzindo o tempo de inatividade.
-2. **Segurança Aprimorada**: Monitoramento contínuo aumenta a segurança, pois qualquer tentativa de evasão de pedágio ou outras infrações são imediatamente identificadas e tratadas.
-3. **Dados para Análise**: A coleta de dados em tempo real proporciona uma base rica para análise de tráfego e comportamento do usuário, permitindo ajustes operacionais e estratégicos mais informados.
-
 ## Equipe
 * Douglas Silva Nunes
 * Luís Lira Sargento 
 * Julius Otto
 * Thiago Pamplona Felcar
-
 
 ## Agradecimentos
 Agradecemos às direções e equipes da Tecsidel, Arteris, e aos gerentes e diretores que forneceram depoimentos e insights que guiaram o desenvolvimento deste projeto.
